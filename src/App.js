@@ -6,6 +6,8 @@ const Home = lazy(() => import("./components/Home.js"));
 const Navbar = lazy(() => import("./components/Navbar.js"));
 const AboutUs = lazy(()=> import('./components/AboutUs.js'))
 const Login = lazy(()=> import('./components/Login.js'))
+const SignUp = lazy(()=> import('./components/SignUp.js'))
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route exact path='/' component={Home}/>
           <Route path='/AboutUs' component={AboutUs}/>
           <Route path='/Login' component={Login}/>
+          <Route path='/SignUp' component={SignUp}/>
         </Switch>
       </Suspense>
     </Router>

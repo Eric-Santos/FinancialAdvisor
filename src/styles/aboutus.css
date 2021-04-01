@@ -1,0 +1,26 @@
+.about-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-title {
+        margin-bottom: 1rem;
+    }
+    .about-image {
+        max-width: 100vw;
+    }
+  }
